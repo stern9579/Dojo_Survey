@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form action="/count" method="post" style="width: 800px; border: solid grey 2px; padding: 50px; margin-left: auto; margin-right: auto; margin-top: 10vh;">
+        <div class="name">
+            <label for="name"><h3>Your Name:</h3></label>
+            <input type="text" name="name">
+        </div>
+        <div class="location">
+            <label for="dojo_location"><h3>Dojo Location:</h3></label>
+            <select id="dojo_location" name="dojo_location">
+                <option value="Seattle">Seattle</option>
+                <option value="Boise">Boise</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="New York">New York</option>
+                <option value="Austin">Austin</option>
+            </select>
+        </div>
+        <div class="language">
+            <label for="language"><h3>Favorite Language:</h3></label>
+            <select id="language" name="language">
+                <option value="Python">Python</option>
+                <option value="Javascipt">Javascipt</option>
+                <option value="CSS">CSS</option>
+                <option value="HTML">HTML</option>
+                <option value="Ruby">Ruby</option>
+            </select>
+        </div>
+        <div class="comment">
+            <label for="comment"><h3>Comment (Optional):</h3></label>
+            <textarea name="comment" style="max-width:100%; min-width: 100%; max-height:150px; min-height: 150px;"></textarea>
+        </div>
+        <input type="submit" value="submit">
+    </form>
+    <!-- <form action="/destroy_session" method="post">
+        <input type="submit" class="button2" name="count2" value="reset">
+    </form> -->
+
+</body>
+</html>

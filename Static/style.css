@@ -1,0 +1,45 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form div input {
+    width: 293px;
+    height: 25px;
+}
+form div select {
+    width: 300px;
+    height: 25px;
+}
+
+.comment {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:  500px;
+    border: solid grey 2px; 
+    padding: 50px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 10vh;
+}
+
+.container div{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
